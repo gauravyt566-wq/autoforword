@@ -239,7 +239,7 @@ def forward_messages(update: Update, context: CallbackContext):
 
 def main():
     # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-    updater = Updater("5955204118:AAGR2MWBBa5357aunl7MeTD-XS4P_KF_kl4", use_context=True)
+    updater = Updater("7662729835:AAFs3CEfLdk-Goy_4gzgh8dwa7rtR1xxiR0", use_context=True)
     dp = updater.dispatcher
 
     # Register command handlers
