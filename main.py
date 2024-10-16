@@ -38,7 +38,7 @@ init_db()
 
 
 # Add this at the beginning
-owner = [5470956337]  # Replace with your Telegram user ID(s)
+owner = [965161290]  # Replace with your Telegram user ID(s)
 
 # Modify command handlers to check for admin
 def thanos(func):
