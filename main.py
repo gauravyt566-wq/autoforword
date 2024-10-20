@@ -2,7 +2,7 @@ import logging
 import sqlite3
 from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
-
+from vars import owner, bot_token
 # Enable logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -36,9 +36,6 @@ def init_db():
 init_db()
 
 
-
-# Add this at the beginning
-owner = [your_id]  # Replace with your Telegram user ID(s)
 
 # Modify command handlers to check for admin
 def thanos(func):
@@ -239,7 +236,7 @@ def forward_messages(update: Update, context: CallbackContext):
 
 def main():
     # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-    updater = Updater("yourbot_token", use_context=True)
+    updater = Updater(f"{bot_token}", use_context=True)
     dp = updater.dispatcher
 
     # Register command handlers
