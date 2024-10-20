@@ -38,7 +38,7 @@ init_db()
 
 
 # Add this at the beginning
-owner = [965161290]  # Replace with your Telegram user ID(s)
+owner = [your_id]  # Replace with your Telegram user ID(s)
 
 # Modify command handlers to check for admin
 def thanos(func):
@@ -239,7 +239,7 @@ def forward_messages(update: Update, context: CallbackContext):
 
 def main():
     # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-    updater = Updater("7662729835:AAFs3CEfLdk-Goy_4gzgh8dwa7rtR1xxiR0", use_context=True)
+    updater = Updater("yourbot_token", use_context=True)
     dp = updater.dispatcher
 
     # Register command handlers
